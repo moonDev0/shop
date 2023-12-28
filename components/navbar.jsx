@@ -3,6 +3,7 @@ import { LinkList } from './linklist'
 import Link from 'next/link'
 import { FaPhoneAlt, FaTelegramPlane } from "react-icons/fa";
 import { useRouter } from 'next/router';
+import FloatingCart from './cart';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +59,7 @@ const Navbar = () => {
                 example@mgail.com
               </span>{' '}
             </h1>
+
           </div>
         </div>
       </div>
@@ -67,7 +69,9 @@ const Navbar = () => {
       >
         <div className='container h-[75px] items-center bg-white flex justify-between mx-auto w-full'>
           <div className='logo'>
-            <h1 className='text-[20px] text-green-900 ml-10 md:ml-0 font-bold'>MedicareRx</h1>
+            <h1 className='text-[20px] text-green-900 ml-10 md:ml-0 font-bold flex items-center justify-between'> <h1 className='mr-14'>MedicareRx</h1> <FloatingCart/>
+             </h1>
+            
           </div>
 
           {/* Mobile menu icon */}
