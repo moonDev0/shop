@@ -8,43 +8,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -59,43 +59,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -110,43 +110,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -161,43 +161,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -212,43 +212,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -263,43 +263,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -314,43 +314,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -365,43 +365,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -416,43 +416,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -468,43 +468,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -519,43 +519,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -570,43 +570,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -621,43 +621,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -672,43 +672,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }
@@ -723,43 +723,43 @@ export const Product = [
 
             {
                 name: 'Adderall 10mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 12.5mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall 30mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 15mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             },
             {
                 name: 'Adderall XR 20mg',
-                price: '$308',
+                price: 308,
                 img:'/assets/adderall.jpg',
                 pills: "60 pills"
             }

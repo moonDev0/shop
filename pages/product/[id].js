@@ -8,7 +8,7 @@ import useCartStore from '@/store/cartStore';
 import FloatingCart from '@/components/cart';
 
 const ProductView = () => {
-  const { cartitems, addToCart } = useCartStore();
+  const { addToCart } = useCartStore();
   const router = useRouter();
   const { id } = router.query;
   const item = Product.find((item) => item.id === parseInt(id));
@@ -17,8 +17,12 @@ const ProductView = () => {
     return <div>Not found</div>;
   }
 
-  const handleAddToCart = () => {
-    addToCart(item);
+  const handleAddToCart = (subItem) => {
+    const cartItem = {
+      name: subItem.name,
+      price: subItem.price,
+    };
+    addToCart(cartItem);
     // You can implement additional logic here, such as updating the cart in local storage or making an API call.
   };
 
@@ -37,9 +41,9 @@ const ProductView = () => {
               className="p-4 rounded"
             >
               <h2 className='bg-white pl-2'>{subItem.name}</h2>
-              <p className='bg-white text-red-700 pl-2'>{subItem.price}</p>
+              <p className='bg-white text-red-700 pl-2'>$ {subItem.price}</p>
               <button
-                onClick={handleAddToCart}
+                onClick={() => handleAddToCart(subItem)}
                 className="mt-4 bg-blue-500 bg-white text-blue-700 p-2 rounded"
               >
                 <MdAddShoppingCart size={20} />
@@ -50,7 +54,6 @@ const ProductView = () => {
       </div>
 
       <div>
-        <FloatingCart />
         <Footer />
       </div>
     </div>
