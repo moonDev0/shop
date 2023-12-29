@@ -1,141 +1,172 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import useCartStore from '@/store/cartStore';
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
-const CheckoutForm = () => {
-  const { cart } = useCartStore();
 
+const AlternateContactform = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    address: '',
-    image: null,
     name: '',
-    amount: '',
+    email: '',
+    message: '',
+    interest: '',
+    country: '',
   });
 
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    message: '',
+    interest: '',
+    country: '',
+  });
+
+  const validateForm = () => {
+    let isValid = true;
+    const newErrors = { name: '', email: '', message: '', interest: '', country: '' };
+
+    // Basic validation example, you can customize as needed
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Invalid email format';
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
   const handleChange = (e) => {
-    const { name, value, type } = e.target;
-
-    const fileValue = type === 'file' ? e.target.files[0] : value;
-
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: fileValue,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      if (cart.length === 0) {
-        console.error('Cart is empty. Add items before submitting.');
-        return;
+    if (validateForm()) {
+      try {
+        const response = await fetch('/api/sendEmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+            interest: '',
+            country: '',
+          });
+          // alert('Your message has been sent!');
+        //   toast.success("Message sent successfully");
+        } else {
+          // alert('There was an error sending your message. Please try again later.');
+        //   toast.error('Error sending your message');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        // alert('There was an error submitting the form. Please try again later.');
+        // toast.error('Error sending your message');
       }
-
-      const formDataWithFile = new FormData();
-      formDataWithFile.append('image', formData.image);
-      formDataWithFile.append('email', formData.email);
-      formDataWithFile.append('address', formData.address);
-      formDataWithFile.append('name', formData.name);
-      formDataWithFile.append('amount', formData.amount);
-
-      const response = await axios.post('YOUR_API_ENDPOINT', formDataWithFile, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-
-      console.log('API Response:', response.data);
-    } catch (error) {
-      console.error('Error submitting form:', error);
     }
   };
 
   return (
-    <div className="container mx-auto mt-8">
-      <h1 className="text-[14px] font-bold mb-4">Submit your payment details below</h1>
+    <div className='lg:container mb-[100px] mx-5 z-10  lg:mx-auto shadow-xl pb-[50px]  bg-white'>
 
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 rounded shadow-md">
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Address:</label>
-          <textarea
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-            rows="3"
-          ></textarea>
-        </div>
-
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Image Upload:</label>
-          <input
-            type="file"
-            name="image"
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            accept="image/*"
-            required
-          />
-        </div>
-
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            required
-          />
-        </div>
-
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Amount:</label>
-          {cart.length === 0 ? (
-            <p className="text-red-500">Your cart is empty. Add items before submitting.</p>
-          ) : (
-            <div>
-              <ul>
-                {cart.map((item, id) => (
-                  <li key={id}>{item.name}</li>
-                ))}
-              </ul>
-              <p className="font-bold mt-2">Total: $ {cart.reduce((acc, item) => acc + 50 + parseFloat(item.price), 0).toFixed(2)}</p>
+    
+      <div className="lg:container mx-auto lg:pr-10 lg:pl-5 block lg:flex">
+        
+        <div data-aos="zoom-in" className="left w-full">
+          <form onSubmit={handleSubmit}>
+            <div className='px-5  my-5'>
+              <input
+                type="text"
+                value={formData.name}
+                onChange={handleChange}
+                className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.name && 'border-red-500'}`}
+                placeholder='Name'
+                name="name"
+                id=""
+              />
+              {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
             </div>
-          )}
+            <div className='px-5  my-5'>
+              <input
+                type="text"
+                value={formData.email}
+                onChange={handleChange}
+                className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.email && 'border-red-500'}`}
+                placeholder='Email'
+                name="email"
+                id=""
+              />
+              {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+            </div>
+            <div className='px-5  my-5'>
+              <input
+                type="text"
+                value={formData.country}
+                onChange={handleChange}
+                className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.country && 'border-red-500'}`}
+                placeholder='Address'
+                name="country"
+                id=""
+              />
+              {errors.country && <p className="text-red-500 text-xs mt-1">{errors.country}</p>}
+            </div>
+            <div className='px-5  my-5'>
+              <input
+                type="text"
+                value={formData.interest}
+                onChange={handleChange}
+                className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.interest && 'border-red-500'}`}
+                placeholder='I am interested in'
+                name="interest"
+                id=""
+              />
+              {errors.interest && <p className="text-red-500 text-xs mt-1">{errors.interest}</p>}
+            </div>
+            <div className='px-5  my-5'>
+              <textarea
+                value={formData.message}
+                onChange={handleChange}
+                className={`px-5 w-full border-black border py-2 md:py-5 rounded-br-xl rounded-tl-xl ${errors.message && 'border-red-500'}`}
+                name="message"
+                id=""
+                placeholder='Write us a message'
+                cols="12"
+                rows="3"
+              ></textarea>
+              {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message}</p>}
+            </div>
+            <div className='px-5 my-5'>
+              <button className='bg-[#17B687] py-5 text-white text-sm md:text-[20px] font-[600] px-10 w-full rounded-tl-xl rounded-br-xl'>Send Message</button>
+            </div>
+          </form>
         </div>
+      </div>
 
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Cart Summary:</label>
-          <textarea
-            name="message"
-            value={cart.map((item) => `${item.name} $${item.price}`).join('\n')}
-            onChange={handleChange}
-            className="w-full p-2 border rounded"
-            rows="3"
-          ></textarea>
-        </div>
-
-        <button type="submit" className="bg-secondary text-white p-2 rounded">Submit</button>
-      </form>
     </div>
   );
 };
 
-export default CheckoutForm;
+export default AlternateContactform;
