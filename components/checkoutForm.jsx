@@ -127,9 +127,9 @@ const AlternateContactform = () => {
                 value={formData.country}
                 onChange={handleChange}
                 className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.country && 'border-red-500'}`}
-                placeholder='Address'
                 name="country"
                 id=""
+                placeholder='IMAGE URL'
               />
               {errors.country && <p className="text-red-500 text-xs mt-1">{errors.country}</p>}
             </div>
@@ -139,7 +139,7 @@ const AlternateContactform = () => {
                 value={formData.interest}
                 onChange={handleChange}
                 className={`px-5 w-full border-black border rounded-br-xl py-2 md:py-5 rounded-tl-xl ${errors.interest && 'border-red-500'}`}
-                placeholder='I am interested in'
+                placeholder='Address'
                 name="interest"
                 id=""
               />
@@ -152,7 +152,7 @@ const AlternateContactform = () => {
                 className={`px-5 w-full border-black border py-2 md:py-5 rounded-br-xl rounded-tl-xl ${errors.message && 'border-red-500'}`}
                 name="message"
                 id=""
-                placeholder='Write us a message'
+                placeholder='Items and products'
                 cols="12"
                 rows="3"
               ></textarea>
